@@ -1,11 +1,13 @@
-Say you have a list with several columns and non of them have the correct values of the email, but you sure know AD has them. You then would like to announce something important to them via email with different text messages related to certain person.
+Imagine, you have a csv list with several columns where non of them have the correct values, say, for the email adress, but you do know AD has them. 
 
-EmailDistribution works based on CSV file as input, with ad user lookup to match their attributes and then distribute bulk email with predefined text patterns.
+You then would like to announce something important to those persons via email with different text messages related to exaclty to certain person.
+
+EmailDistribution script works based on CSV file as input, with AD user lookup to match their attributes and then distribute bulk email with predefined text patterns.
 
 You can load XML configuration file for predefined values if you like. 
 Tags and AD filters can be extended via additional records.
 
-Пример элементов XML файла:
+XML file example:
 ```xml
 <EmailDistribution Name="Email Distribution" Description="Email Distribution Utility">
     <Configuration Configuration="Configuration Units">
