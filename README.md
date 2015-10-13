@@ -1,4 +1,4 @@
-Imagine, you have a csv list with several columns where non of them have the correct values, say, for the email adress, but you do know AD has them. 
+Imagine, you have a csv list with several columns where non of them have the correct values, say, for the email adress, but you do know AD has them. (Yes, those things happens a lot!)
 
 You then would like to announce something important to those persons via email with different text messages related to exaclty to certain person.
 
@@ -56,3 +56,4 @@ XML file example:
     </Configuration>
 </EmailDistribution>
 ```
+
