@@ -1,6 +1,9 @@
-EmailDistribution работает на основе входного CSV файла, с возможностью дальнейшего поиска учетных данных в AD(а можно и без!) и дистрибуции email рассылки по шаблону загружаемого текста с подстановкой собственных тегов.
+Say you have a list with several columns and non of them have the correct values of the email, but you sure know AD has them. You then would like to announce something important to them via email with different text messages related to certain person.
 
-Существует возможность настройки предопределенных значений и действий в работе средством конфигурационного файла в текущей директории программы. Файл должен иметь имя - configuration.xml
+EmailDistribution works based on CSV file as input, with ad user lookup to match their attributes and then distribute bulk email with predefined text patterns.
+
+You can load XML configuration file for predefined values if you like. 
+Tags and AD filters can be extended via additional records.
 
 Пример элементов XML файла:
 ```xml
