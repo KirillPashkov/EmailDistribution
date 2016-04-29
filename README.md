@@ -14,7 +14,7 @@ XML file example:
 <EmailDistribution Name="Email Distribution" Description="Email Distribution Utility">
 	<Configuration Configuration="Configuration Units">
 		<Email>
-			<SmtpServer>smtp1.go.rshbank.ru</SmtpServer>
+			<SmtpServer>smtpxxx</SmtpServer>
 			<FromAdress>PashkovKM@xxx.ru</FromAdress>
 			<DisplayName>Pashkov Kirill</DisplayName>	
 			<Subject>Weekly Announce</Subject>
@@ -48,9 +48,15 @@ XML file example:
 			<DomainName>contoso.local,test.local</DomainName>
 		</ADDomainSkip>
 		<ADLookupSkip ADLookupSkip="Force to skip AD user account lookup">
-			<!--Set to "True" to skip AD user account lookup. Default value is "False"-->
+			<!--Set to "True" to skip AD user account lookup. Default value is "True"-->
 			<Enable>False</Enable>
 		</ADLookupSkip>
+		<ADEmailAttribute ADEmailAttribute="Set default email attribute">
+			<!--Specify mail or EmailAddress or other possible AD attribute. Use ',' as separator for multiplue values-->
+			<Email>mail,EmailAddress</Email>
+			<!--If more than one unique addresses have found use first one or use all. Default value is "False"-->
+			<FirstValueOnly>False</FirstValueOnly>
+		</ADEmailAttribute>
 		<TextPatternSkip TextPatternSkip="Force to skip text pattern load">
 			<!--Set to "True" to skip pattern load and use edit mode. Default value is "False"-->
 			<Enable>False</Enable>	
